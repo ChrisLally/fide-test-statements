@@ -1,5 +1,5 @@
 ---
-type: fide-statements-v0
+type: fide-statements
 version: v0
 defaults:
   subject:
