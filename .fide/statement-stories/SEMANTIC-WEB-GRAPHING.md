@@ -111,11 +111,12 @@ Chris' Agent must deliver all of the following:
 Initialize local Fide workspace in the current repo by creating `.fide/` folders only (does not modify app/source code).
 Use this once per repo before writing statement batches.
 
-`fide graph statements add --stdin --json`
-Primary (AI-first) path. Build a new statement batch from stdin payload and print structured output.
+`fide graph statements add --in .fide/statement-stories/semantic-web-graphing-statements.md --json`
+Primary path for this story. Build a new statement batch from the checked-in statement markdown definition and print structured output.
 Accepted stdin formats:
 - JSON array of statement input objects
 - JSONL (one statement input object per line)
+- FSD statement grammar (`--format fsd`)
 
 Default behavior:
 - normalization is ON by default
@@ -128,11 +129,12 @@ Optional flags:
 What it prints with `--json`:
 - `{ ok, root, statementCount, outPath, statementFideIds }`
 
-`fide graph statements add --in .fide/statement-stories/semantic-web-graphing-inputs.json --json`
-Legacy/file-driven path (kept for now while testing). Same behavior as `--stdin`, but reads from a file instead of stdin.
+`fide graph statements add --stdin --format fsd --json`
+Equivalent stream-first path for agents that generate FSD in-memory and pipe it directly.
 Input file may be:
 - JSON array
 - JSONL
+- FSD
 
 `fide graph statements validate --in .fide/statements/YYYY/MM/DD/<root>.jsonl --json`
 Validate an existing `.jsonl` batch and parse all statement wire lines.
@@ -149,6 +151,6 @@ Use this when you want a clean canonicalized file before commit/broadcast, or to
 
 ## Working Default (Current Recommendation)
 For this story, Chris' Agent should use:
-- `graph statements add --stdin --json` as the default add command
+- `graph statements add --in .fide/statement-stories/semantic-web-graphing-statements.md --json` as the default add command
 - normalization ON (implicit)
 - `--in` only when a file-based handoff is explicitly needed
