@@ -111,7 +111,7 @@ Chris' Agent must deliver all of the following:
 Initialize local Fide workspace in the current repo by creating `.fide/` folders only (does not modify app/source code).
 Use this once per repo before writing statement batches.
 
-`fide statements add --stdin --json`
+`fide graph statements add --stdin --json`
 Primary (AI-first) path. Build a new statement batch from stdin payload and print structured output.
 Accepted stdin formats:
 - JSON array of statement input objects
@@ -128,27 +128,27 @@ Optional flags:
 What it prints with `--json`:
 - `{ ok, root, statementCount, outPath, statementFideIds }`
 
-`fide statements add --in .fide/statement-stories/semantic-web-graphing-inputs.json --json`
+`fide graph statements add --in .fide/statement-stories/semantic-web-graphing-inputs.json --json`
 Legacy/file-driven path (kept for now while testing). Same behavior as `--stdin`, but reads from a file instead of stdin.
 Input file may be:
 - JSON array
 - JSONL
 
-`fide statements validate --in .fide/statements/YYYY/MM/DD/<root>.jsonl --json`
+`fide graph statements validate --in .fide/statements/YYYY/MM/DD/<root>.jsonl --json`
 Validate an existing `.jsonl` batch and parse all statement wire lines.
 Use this as the first integrity check after `statement add`.
 With `--json`, returns structured validation output including `statementCount` and `root`.
 
-`fide statements root --in .fide/statements/YYYY/MM/DD/<root>.jsonl`
+`fide graph statements root --in .fide/statements/YYYY/MM/DD/<root>.jsonl`
 Recompute deterministic batch root from the input batch and print only the root string.
 Use this to verify reproducibility or to reference the batch in downstream ingest workflows.
 
-`fide statements normalize --in .fide/statements/YYYY/MM/DD/<root>.jsonl --out .fide/statements/YYYY/MM/DD/<root>.normalized.jsonl`
+`fide graph statements normalize --in .fide/statements/YYYY/MM/DD/<root>.jsonl --out .fide/statements/YYYY/MM/DD/<root>.normalized.jsonl`
 Re-emit parsed wire statements as normalized JSONL output.
 Use this when you want a clean canonicalized file before commit/broadcast, or to compare two batches after formatting differences.
 
 ## Working Default (Current Recommendation)
 For this story, Chris' Agent should use:
-- `statement add --stdin --json` as the default add command
+- `graph statements add --stdin --json` as the default add command
 - normalization ON (implicit)
 - `--in` only when a file-based handoff is explicitly needed
