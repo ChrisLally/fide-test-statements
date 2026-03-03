@@ -1,0 +1,19 @@
+name: Fide Statements Broadcast
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".fide/statements/**"
+      - ".github/workflows/statements-broadcast.yml"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  broadcast:
+    uses: ChrisLally/fide/.github/workflows/statements-broadcast.yml@main
+    secrets: inherit
