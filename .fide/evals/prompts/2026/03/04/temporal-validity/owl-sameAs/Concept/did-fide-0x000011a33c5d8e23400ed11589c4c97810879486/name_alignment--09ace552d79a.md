@@ -15,9 +15,9 @@
 - kind: predicate
 - definition: The date/time from which a statement is valid.
 
-### prov:hadPrimarySource
+### schema:name
 - kind: predicate
-- definition: Links a statement to primary-source evidence.
+- definition: The name of an item.
 
 ## Task
 Evaluate one evidence statement for one consideration.
@@ -30,7 +30,7 @@ Evaluate one evidence statement for one consideration.
 - object (fide:Concept (source fide:NetworkResource)): https://www.w3.org/TR/rdf-sparql-query/
 
 ## Consideration
-- citation_chain
+- name_alignment
 
 ## Statement: Anchor schema:validFrom
 - subject (fide:Statement): section: Statement: Target owl:sameAs
@@ -38,14 +38,9 @@ Evaluate one evidence statement for one consideration.
 - object (fide:DateTimeLiteral (source fide:DateTimeLiteral)): 2008-01-15T00:00:00Z
 
 ## Statement: Evidence under review
-- subject (fide:Statement): section: Statement: Target owl:sameAs
-- predicate: prov:hadPrimarySource
-- object (fide:NetworkResource (source fide:NetworkResource)): https://www.w3.org/TR/rdf-sparql-query/
-
-## Primary Source Report
-```
-schema:name: "SPARQL Protocol and RDF Query Language"
-```
+- subject (fide:Concept (source fide:NetworkResource)): https://www.w3.org/TR/rdf-sparql-query/
+- predicate: schema:name
+- object (fide:TextLiteral (source fide:TextLiteral)): SPARQL Protocol and RDF Query Language
 
 ## Draft Command
 - Write the evaluation draft directly with CLI:

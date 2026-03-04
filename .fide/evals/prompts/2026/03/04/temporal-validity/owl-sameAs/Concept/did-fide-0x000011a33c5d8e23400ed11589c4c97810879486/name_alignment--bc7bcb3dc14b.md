@@ -7,45 +7,17 @@
 - All inputs are provided as subject-predicate-object triples and report attributes.
 
 ## Definitions
-### fide:NetworkResource
-- kind: entity_type
-- definition: Identity primarily by network addressability/resolution.
-
-### fide:Organization
-- kind: entity_type
-- definition: A structured collective that acts as a unit.
-
-### fide:Person
-- kind: entity_type
-- definition: A person entity type.
-
-### fide:Statement
-- kind: entity_type
-- definition: The atomic subject-predicate-object assertion unit.
-
 ### owl:sameAs
 - kind: predicate
 - definition: Indicates two identifiers refer to the same entity.
-
-### owl:differentFrom
-- kind: predicate
-- definition: Indicates two identifiers refer to different entities.
 
 ### schema:validFrom
 - kind: predicate
 - definition: The date/time from which a statement is valid.
 
-### prov:hadPrimarySource
-- kind: predicate
-- definition: Links a statement to primary-source evidence.
-
 ### schema:name
 - kind: predicate
 - definition: The name of an item.
-
-### schema:worksFor
-- kind: predicate
-- definition: Organization that a person works for.
 
 ## Task
 Evaluate one evidence statement for one consideration.

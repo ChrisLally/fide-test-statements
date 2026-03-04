@@ -1,0 +1,21 @@
+---
+type: fide-statements
+version: v0
+defaults:
+  subject:
+    source: NetworkResource
+  object:
+    source: NetworkResource
+meta:
+  method: "temporal-validity/owl-sameAs/Concept@v1"
+  target: "did:fide:0x000011a33c5d8e23400ed11589c4c97810879486"
+  batch: "/Users/chrislally/Desktop/fide-internal/.tmp/fide-test-statements/.fide/statements/2026/03/04/10e34dc848e99ced06d4af2624b375c60c32aee42d218dce12f149a2bd73646e.jsonl"
+  consideration: "name_alignment"
+  evidenceStatement: "did:fide:0x0000927ca3cf523848f3d4f2a4f9bc7bcb3dc14b"
+  promptFile: ".fide/evals/prompts/2026/03/04/temporal-validity/owl-sameAs/Concept/did-fide-0x000011a33c5d8e23400ed11589c4c97810879486/name_alignment--bc7bcb3dc14b.md"
+  source: "eval-add"
+---
+
+[Statement/Statement:did:fide:0x312078ca1ac71943cbabac6c03b43dec4a0ea0a6|did:fide:0x312008f51a785d7cc3eea22d7b56fd9ff236af4a|did:fide:0x312067f7312575db147f6cca4d189fc54a32167d] https://example.org/evaluation/decision [TextLiteral/TextLiteral:contradicts]
+[Statement/Statement:did:fide:0x312078ca1ac71943cbabac6c03b43dec4a0ea0a6|did:fide:0x312008f51a785d7cc3eea22d7b56fd9ff236af4a|did:fide:0x312067f7312575db147f6cca4d189fc54a32167d] https://example.org/evaluation/confidence [DecimalLiteral/DecimalLiteral:0.76]
+[Statement/Statement:did:fide:0x312078ca1ac71943cbabac6c03b43dec4a0ea0a6|did:fide:0x312008f51a785d7cc3eea22d7b56fd9ff236af4a|did:fide:0x312067f7312575db147f6cca4d189fc54a32167d] https://example.org/evaluation/reason [TextLiteral/TextLiteral:Evidence names the target as 'SPARQL Protocol and RDF Query Language', which does not align with the sparql11-query identifier for name alignment.]
