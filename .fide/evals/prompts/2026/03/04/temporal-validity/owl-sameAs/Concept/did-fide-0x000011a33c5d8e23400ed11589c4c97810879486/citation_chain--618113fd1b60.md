@@ -75,10 +75,14 @@ Evaluate one evidence statement for one consideration.
 schema:name: "SPARQL Protocol and RDF Query Language"
 ```
 
-## Return JSON
-- decision (supports | contradicts | insufficient)
-- confidence (0.0 to 1.0)
-- reason
+## Draft Command
+- Write the evaluation draft directly with CLI:
+```bash
+fide eval add \
+  --decision <supports|contradicts|insufficient> \
+  --confidence <0..1> \
+  --reason "<short evidence-grounded rationale>"
+```
 
 ## Rules
 - Use only the statements in this prompt.

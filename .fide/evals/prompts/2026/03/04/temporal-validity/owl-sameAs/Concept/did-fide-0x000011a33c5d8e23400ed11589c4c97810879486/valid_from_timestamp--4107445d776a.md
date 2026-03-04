@@ -70,15 +70,14 @@ Evaluate one evidence statement for one consideration.
 - predicate: schema:validFrom
 - object (fide:DateTimeLiteral (source fide:DateTimeLiteral)): 2008-01-15T00:00:00Z
 
-## Primary Source Report
+## Draft Command
+- Write the evaluation draft directly with CLI:
+```bash
+fide eval add \
+  --decision <supports|contradicts|insufficient> \
+  --confidence <0..1> \
+  --reason "<short evidence-grounded rationale>"
 ```
-none
-```
-
-## Return JSON
-- decision (supports | contradicts | insufficient)
-- confidence (0.0 to 1.0)
-- reason
 
 ## Rules
 - Use only the statements in this prompt.

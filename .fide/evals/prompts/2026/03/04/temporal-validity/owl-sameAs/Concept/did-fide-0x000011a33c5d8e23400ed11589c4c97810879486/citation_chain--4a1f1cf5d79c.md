@@ -70,15 +70,14 @@ Evaluate one evidence statement for one consideration.
 - predicate: prov:hadPrimarySource
 - object (fide:NetworkResource (source fide:NetworkResource)): https://www.w3.org/TR/rdf-sparql-query/
 
-## Primary Source Report
+## Draft Command
+- Write the evaluation draft directly with CLI:
+```bash
+fide eval add \
+  --decision <supports|contradicts|insufficient> \
+  --confidence <0..1> \
+  --reason "<short evidence-grounded rationale>"
 ```
-none
-```
-
-## Return JSON
-- decision (supports | contradicts | insufficient)
-- confidence (0.0 to 1.0)
-- reason
 
 ## Rules
 - Use only the statements in this prompt.
