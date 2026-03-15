@@ -20,12 +20,13 @@
       "gitignore": false,
       "recipe": [
         {
-          "from": "local"
+          "from": "local",
+          "fromDateUTC": "2026-03-14"
         }
       ],
       "metadata": {
-        "lastRunAt": "2026-03-15T16:03:21.069Z",
-        "lastRunStatementsAdded": 70
+        "lastRunAt": "2026-03-15T17:53:20.605Z",
+        "lastRunStatementsAdded": 68
       }
     },
     "curated": {
