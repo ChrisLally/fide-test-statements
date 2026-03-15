@@ -1,18 +1,41 @@
 {
-  "storeTargets": {
+  "statementStores": {
+    "local": {
+      "type": "fide-jsonl",
+      "connection": "statements"
+    },
     "primary": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL",
-      "schema": "fide_graph"
+      "schema": "fide_graph",
+      "recipe": [
+        {
+          "from": "local"
+        }
+      ]
     },
     "sqlite": {
       "type": "sqlite",
-      "connection": ".tmp/fide-test-statements/.fide/test.sqlite",
-      "gitignore": false
+      "connection": "test.sqlite",
+      "gitignore": false,
+      "recipe": [
+        {
+          "from": "local"
+        }
+      ],
+      "metadata": {
+        "lastRunAt": "2026-03-15T16:03:21.069Z",
+        "lastRunStatementsAdded": 70
+      }
     },
     "curated": {
       "type": "sqlite",
-      "connection": ".tmp/fide-test-statements/.fide/curated.sqlite"
+      "connection": "curated.sqlite",
+      "recipe": [
+        {
+          "from": "local"
+        }
+      ]
     },
     "combined": {
       "type": "postgres",
@@ -33,16 +56,16 @@
         }
       ],
       "metadata": {
-        "lastRunAt": "2026-03-15T04:54:55.088Z",
-        "lastRunStatementsAdded": 81
+        "lastRunAt": "2026-03-15T17:16:23.829Z",
+        "lastRunStatementsAdded": 82
       }
     }
   },
-  "appTargets": {
-    "postgres": {
+  "queryStores": {
+    "postgresQueries": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL_SB",
-      "schema": "fide_app"
+      "schema": "fide_graph_queries"
     }
   }
 }
