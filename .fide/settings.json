@@ -6,13 +6,17 @@
     },
     "primary": {
       "type": "postgres",
-      "connection": "FIDE_GRAPH_DATABASE_URL",
+      "connection": "FIDE_GRAPH_DATABASE_URL_SB",
       "schema": "fide_graph",
       "recipe": [
         {
           "from": "local"
         }
-      ]
+      ],
+      "metadata": {
+        "lastRunAt": "2026-03-16T03:56:59.005Z",
+        "lastRunStatementsAdded": 3771
+      }
     },
     "sqlite": {
       "type": "sqlite",
@@ -25,8 +29,8 @@
         }
       ],
       "metadata": {
-        "lastRunAt": "2026-03-15T17:53:20.605Z",
-        "lastRunStatementsAdded": 68
+        "lastRunAt": "2026-03-16T03:48:39.858Z",
+        "lastRunStatementsAdded": 3769
       }
     },
     "curated": {
@@ -49,10 +53,6 @@
         },
         {
           "from": "sqlite",
-          "sql": "SELECT * FROM statements"
-        },
-        {
-          "from": "curated",
           "sql": "SELECT * FROM statements"
         }
       ],
