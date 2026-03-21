@@ -62,7 +62,7 @@
       }
     }
   },
-  "queryStores": {
+  "queryCatalogs": {
     "postgresQueries": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL_SB",
