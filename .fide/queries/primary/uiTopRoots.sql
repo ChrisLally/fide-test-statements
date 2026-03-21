@@ -1,3 +1,4 @@
+-- statement-store: primary
 -- description: Most recent and largest roots with statement counts for dashboard views
 
 select

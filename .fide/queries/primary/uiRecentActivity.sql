@@ -1,3 +1,4 @@
+-- statement-store: primary
 -- description: Recent root writes with compact activity details for dashboard views
 
 select

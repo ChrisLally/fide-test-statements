@@ -1,3 +1,4 @@
+-- statement-store: primary
 -- description: Entity counts grouped by fide entity type for dashboard summaries
 
 with entity_refs as (

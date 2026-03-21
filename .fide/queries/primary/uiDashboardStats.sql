@@ -1,3 +1,4 @@
+-- statement-store: primary
 -- description: Single-row dashboard summary with core graph counts and latest activity
 
 with statement_stats as (

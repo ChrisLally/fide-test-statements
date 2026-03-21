@@ -45,7 +45,7 @@
     "combined": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL_SB",
-      "schema": "fide_graph",
+      "schema": "fide_graph_combined",
       "recipe": [
         {
           "from": "primary",
@@ -57,8 +57,8 @@
         }
       ],
       "metadata": {
-        "lastRunAt": "2026-03-15T17:16:23.829Z",
-        "lastRunStatementsAdded": 82
+        "lastRunAt": "2026-03-21T15:48:06.920Z",
+        "lastRunStatementsAdded": 3771
       }
     }
   },
