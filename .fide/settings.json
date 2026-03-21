@@ -1,5 +1,5 @@
 {
-  "statementStores": {
+  "graphs": {
     "local": {
       "type": "fide-jsonl",
       "connection": "statements"
