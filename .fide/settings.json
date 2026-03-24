@@ -42,7 +42,7 @@
         }
       ]
     },
-    "combined": {
+    "combined-graph-postgres": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL_SB",
       "schema": "fide_graph_combined",
