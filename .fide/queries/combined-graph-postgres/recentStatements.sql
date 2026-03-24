@@ -1,4 +1,3 @@
--- statement-store: combined-graph-postgres
 -- description: Recent denormalized statements from the combined postgres graph
 
 with statement_roots_agg as (

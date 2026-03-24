@@ -61,12 +61,5 @@
         "lastRunStatementsAdded": 3771
       }
     }
-  },
-  "queryCatalogs": {
-    "postgresQueries": {
-      "type": "postgres",
-      "connection": "FIDE_GRAPH_DATABASE_URL_SB",
-      "schema": "fide_graph_queries"
-    }
   }
 }
