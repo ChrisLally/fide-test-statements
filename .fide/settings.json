@@ -42,6 +42,11 @@
         }
       ]
     },
+    "aicommunity_graph": {
+      "type": "sqlite",
+      "connection": "aicommunity.sqlite",
+      "recipe": []
+    },
     "combined-graph-postgres": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL_SB",
