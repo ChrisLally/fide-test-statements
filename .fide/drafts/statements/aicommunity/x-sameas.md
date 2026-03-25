@@ -5,6 +5,8 @@ description: agentcommunity.org member profile URLs linked to normalized X handl
 entityTypeHelp: fide graph defs
 createdAtUTC: 2026-03-25T01:39:33.002Z
 updatedAtUTC: 2026-03-25T02:48:18.157Z
+writtenAtUTC: 2026-03-25T15:23:41.473Z
+writtenRoot: fc240027013b13b40e81783c851ee69567257b3e2d3f4e238377ac113102ff4a
 updateCount: 11
 defaults:
   subject:

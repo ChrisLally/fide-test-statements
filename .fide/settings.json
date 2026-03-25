@@ -4,7 +4,7 @@
       "type": "fide-jsonl",
       "connection": "statements"
     },
-    "primary": {
+    "fide-graph-pg-local": {
       "type": "postgres",
       "connection": "FIDE_GRAPH_DATABASE_URL",
       "schema": "fide_graph"

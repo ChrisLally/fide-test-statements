@@ -5,6 +5,8 @@ description: agentcommunity.org member profile URLs linked to direct GitHub prof
 entityTypeHelp: fide graph defs
 createdAtUTC: 2026-03-25T02:37:58.013Z
 updatedAtUTC: 2026-03-25T02:46:38.490Z
+writtenAtUTC: 2026-03-25T15:23:41.461Z
+writtenRoot: d4ab2b00d19b4f9ce6eb9be34f6efc8049b031c77028af994861f698f5fb8ac6
 updateCount: 2
 defaults:
   subject:

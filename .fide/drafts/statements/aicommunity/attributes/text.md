@@ -5,6 +5,8 @@ description: Derived organization text attribute statements from the AgentCommun
 entityTypeHelp: fide graph defs
 createdAtUTC: 2026-03-25T02:32:34.550Z
 updatedAtUTC: 2026-03-25T02:49:41.174Z
+writtenAtUTC: 2026-03-25T15:22:10.581Z
+writtenRoot: 68e81a34542fb6c3ca3950c550c2879fac9a74222f0accd31a8be1c48eec348d
 updateCount: 1
 defaults:
   subject:
