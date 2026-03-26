@@ -1,0 +1,14 @@
+{
+  "id": "sqlite",
+  "name": "SQLite",
+  "version": "0.0.1",
+  "capabilities": {
+    "graphTypes": [
+      "sqlite"
+    ]
+  },
+  "source": {
+    "type": "local",
+    "path": "/Users/chrislally/Desktop/fide-internal/.tmp/fide-plugins/plugins/sqlite"
+  }
+}
