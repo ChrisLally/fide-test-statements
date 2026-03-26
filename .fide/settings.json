@@ -6,8 +6,18 @@
     },
     "fide-graph-pg-local": {
       "type": "postgres",
-      "connection": "FIDE_GRAPH_DATABASE_URL",
-      "schema": "fide_graph"
+      "connection": {
+        "url": "FIDE_GRAPH_DATABASE_URL",
+        "schema": "fide_graph"
+      }
     }
+  },
+  "account": {
+    "id": "account_yecegk5fckx9wy9t",
+    "name": "My Agent"
+  },
+  "workspace": {
+    "id": "workspace_d65fqk74jsyn4bmd",
+    "name": "test workspace"
   }
 }
