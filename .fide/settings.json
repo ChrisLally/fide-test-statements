@@ -9,6 +9,15 @@
       "connection": {
         "url": "FIDE_GRAPH_DATABASE_URL",
         "schema": "fide_graph"
+      },
+      "recipe": [
+        {
+          "from": "local"
+        }
+      ],
+      "metadata": {
+        "lastRunAt": "2026-03-26T03:17:11.976Z",
+        "lastRunStatementsAdded": 2136
       }
     }
   },
