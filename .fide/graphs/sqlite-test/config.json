@@ -1,0 +1,10 @@
+{      "type": "sqlite",
+
+    "connection":{
+    "path": "./graph.sqlite"
+  },"recipe": [
+        {
+          "from": "local"
+        }
+      ]
+}

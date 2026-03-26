@@ -1,0 +1,11 @@
+{      "type": "postgres",
+
+    "connection":{
+    "url": "FIDE_GRAPH_DATABASE_URL",
+    "schema": "fide_graph"
+  },"recipe": [
+        {
+          "from": "local"
+        }
+      ]
+}
