@@ -1,0 +1,6 @@
+{
+  "connection": {
+    "type": "sqlite",
+    "path": "./graphs/sqlite-init-test/graph.sqlite"
+  }
+}
