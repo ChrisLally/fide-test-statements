@@ -1,7 +1,6 @@
-{     
-
-    "connection":{
-      "type": "postgres",
+{
+  "connection": {
+    "type": "postgres",
     "url": "FIDE_GRAPH_DATABASE_URL",
     "schema": "fide_graph"
   }

@@ -1,32 +1,10 @@
 {
-  "graphs": {
-    "local": {
-      "type": "fide-jsonl",
-      "connection": "statements"
-    },
-    "fide-graph-pg-local": {
-      "type": "postgres",
-      "connection": {
-        "url": "FIDE_GRAPH_DATABASE_URL",
-        "schema": "fide_graph"
-      },
-      "recipe": [
-        {
-          "from": "local"
-        }
-      ],
-      "metadata": {
-        "lastRunAt": "2026-03-26T03:17:11.976Z",
-        "lastRunStatementsAdded": 2136
-      }
-    }
-  },
   "account": {
-    "id": "account_yecegk5fckx9wy9t",
+    "id": "account_fbyn2h438ve25qfz",
     "name": "My Agent"
   },
   "workspace": {
-    "id": "workspace_d65fqk74jsyn4bmd",
+    "id": "workspace_qfbdbyc423s37agv",
     "name": "test workspace"
   }
 }
