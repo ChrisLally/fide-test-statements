@@ -1,10 +1,6 @@
-{      "type": "sqlite",
-
-    "connection":{
-    "path": "./graph.sqlite"
-  },"recipe": [
-        {
-          "from": "local"
-        }
-      ]
+{
+  "connection": {
+    "type": "sqlite",
+    "path": ".fide/graphs/sqlite-test/graph.sqlite"
+  }
 }
