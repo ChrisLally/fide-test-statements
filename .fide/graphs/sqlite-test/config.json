@@ -1,6 +1,6 @@
 {
   "connection": {
     "type": "sqlite",
-    "path": ".fide/graphs/sqlite-test/graph.sqlite"
+    "fide-path": "graphs/sqlite-test/graph.sqlite"
   }
 }

@@ -1,7 +1,0 @@
-{
-  "connection": {
-    "type": "postgres",
-    "url": "TEST_SB_URL",
-    "schema": "fide_graph"
-  }
-}
